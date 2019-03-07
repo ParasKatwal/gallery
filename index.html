@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photography</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+</head>
+<body>
+
+<div class="main">
+	<div class="header">
+		<div class="logo">
+			<img src="image/logo.png">
+		</div>
+		<div class="menu">
+			<img src="image/menu.png">
+		</div>
+	</div>
+
+	<div class="slider">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Portfolio</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<div class="row">
+		<div class="col">
+			<a data-fancybox="gallery" href="image/1.jpg"><img src="image/1.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/2.jpg"><img src="image/2.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/3.jpg"><img src="image/3.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/4.jpg"><img src="image/4.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/5.jpg"><img src="image/5.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/6.jpg"><img src="image/6.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/7.jpg"><img src="image/7.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/8.jpg"><img src="image/8.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/9.jpg"><img src="image/9.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/10.jpg"><img src="image/10.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/11.jpg"><img src="image/11.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/12.jpg"><img src="image/12.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/13.jpg"><img src="image/13.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/14.jpg"><img src="image/14.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/15.jpg"><img src="image/15.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/16.jpg"><img src="image/16.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/17.jpg"><img src="image/17.jpg"></a>
+		</div>
+		<div class="col">
+			<a data-fancybox="gallery" href="image/18.jpg"><img src="image/18.jpg"></a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var $slider = $(".slider"),
+		$menu = $(".menu"); 
+
+		$menu.click(function(){
+			$slider.toggleClass("toggle");
+			$menu.toggleClass("menutoggle");
+		});
+	});
+</script>
+
+</body>
+</html>
